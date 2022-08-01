@@ -23,4 +23,10 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('message', msg)
     })
 
+
+    app.listen(port, () => {
+        console.log(`listening to the port no at ${port}`);
+        }) 
+        
 })
+
